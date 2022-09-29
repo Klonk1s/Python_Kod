@@ -1,0 +1,45 @@
+
+
+def acces():
+        print ("Välkommen!")
+        money = input("Skriv hur mycket pengar du erhåller nu:")
+        money = int(money)
+        return money
+def acces_denied():
+        print ("Tyvärr du har inte tillgång till det här systemet")
+        
+
+def fattig():
+        print("GTFO din fattiga sosse!")
+def rik():
+        print("Välkommen moderat!")
+
+def allt ():
+        alder = input("Skriv din ålder\n")
+        alder = int(alder)
+        
+        while alder != 12:
+            print("Inkorrekt ålder!")
+            alder = input("Skriv din ålder igen:\n")
+            alder = int(alder)
+        if alder == 12: 
+            print ("Nice!")
+       
+
+        namn = input("Skriv ditt namn\n")   
+        if namn == "calle" or namn == "Calle":
+            acces_denied() 
+            return
+
+        else:
+            money = acces()
+
+        if money < 1000:
+                fattig()
+        elif money > 1000:
+                rik()
+
+
+money = 0
+
+allt()
